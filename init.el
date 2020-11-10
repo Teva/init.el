@@ -1,4 +1,4 @@
-;; in order to segregate the correct init file Ctrl+H,v  then "user-init-file is"
+;; in order to segregate the correct init file Ctrl+H,v  then "user-init-file" is
 ;; the output is the emacs init file location
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
