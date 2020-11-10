@@ -1,3 +1,6 @@
+;; in order not to segregate the correct init file Ctrl+H,v  then "user-init-file is"
+;; the output is the emacs init file location
+
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                                               ("melpa" . "https://melpa.org/packages/")))
 
@@ -20,4 +23,10 @@
        (get-buffer-process (current-buffer))
        nil "_"))))
 
+;; PLANTUML integration
+;; active Org-babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(;; other Babel languages
+   (plantuml . t)))
 
